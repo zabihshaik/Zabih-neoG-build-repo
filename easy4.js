@@ -7,27 +7,21 @@
 
 //Using normal function
 
-// function findMin(a,b) {
-//     if(a<b)
-//     return a;
-//     else return b;
-// }
-// console.log(findMin(3,5));
+// function findMin(){
 
-function findMin(a,b,c) {
-    if(a<b) {
-        if(b<c)
-        return a;
-        else if(c<a)
-        return c;
-    }
-    
+//   let array = [3, 5, 9, 1];
+//   var min = Math.min(...array);
+//   return min;
+// }
+
+// document.write(findMin(3,5,9,1));
+
+// Using Arrow Function
+
+findMin = () => {
+  let array = [3, 5, 9, 1];
+  var min = Math.min(...array);
+  return min;
 }
-let arrayList = [3, 5, 9, 1];
-let min = arrayList[0];
-for (let i = 1; i < arrayList.length; i++) {
-  if (arrayList[i] < min) {
-    min = arrayList[i];
-  }
-}
-console.log(min);
+
+document.write(findMin(3,5,9,1));
