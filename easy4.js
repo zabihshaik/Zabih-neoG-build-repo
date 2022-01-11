@@ -18,9 +18,16 @@
 
 // Using Arrow Function
 
+// findMin = () => {
+//   let array = [3, 5, 9, 1];
+//   var min = Math.min(...array);
+//   return min;
+// }
+
+// document.write(findMin(3,5,9,1));
+
 findMin = () => {
-  let array = [3, 5, 9, 1];
-  var min = Math.min(...array);
+  var min = Math.min(...[3, 5, 9, 1]);
   return min;
 }
 
